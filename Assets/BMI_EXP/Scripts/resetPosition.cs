@@ -21,7 +21,7 @@ public class resetPosition : MonoBehaviour
         Vector3 current_position = transform.position;
         Debug.Log("transform.position.z: " + current_position.z);
         Debug.Log("counter: " + trial_count);
-        if (current_position.z >= 4.0)
+        if (current_position.z >= 12.5)
         {
             transform.position = initial_position;
             trial_count += 1;
