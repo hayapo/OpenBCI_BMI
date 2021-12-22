@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BMI_EXP/Scenes/Walking.unity
     guid: 999f843b5c8ad664297ca5f6d662168f
-  - enabled: 1
-    path: Assets/BMI_EXP/Scenes/Control.unity
-    guid: 1be998a5da8f7bb43abc0466de615819
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 11325ac7d5709154babe10bcac4f414d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a877b86de1a96554293b9b5e88e18e62, type: 2}
