@@ -2,28 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class automoveForward : MonoBehaviour
+public class autoMove : MonoBehaviour
 {
     private Vector3 pos;
-    private int flag = 1;
-
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("moveForward");
+
     }
 
-    IEnumerator moveForward()
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        if(flag == 1)
+        pos = transform.position;
+        if (Input.GetKey("w"))
         {
-            while (pos.z < 12.5f)
+            if (pos.z < 12.5f)
             {
                 pos = transform.position;
                 transform.Translate(0, 0, 0.08f);
-                yield return new WaitForSeconds(0.01f);
             }
         }
-
     }
 }
