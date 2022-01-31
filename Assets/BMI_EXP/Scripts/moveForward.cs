@@ -34,32 +34,12 @@ public class moveForward : MonoBehaviour
         string text = Encoding.UTF8.GetString(data);
         Vector3 next_position = transform.position;
 
-        if (Input.GetKey("w"))
-        {
-            next_position += Head.transform.forward * MoveSpeed;
-            Vector3 binding_y = next_position;
-            binding_y.y = _cameraHeight;
-            transform.position = binding_y;
-        }
-        if (Input.GetKey("s"))
-        {
-            next_position -= Head.transform.forward * MoveSpeed;
-            Vector3 binding_y = next_position;
-            binding_y.y = next_position.y;
-            transform.position = binding_y;
-        }
+
         if (text == "1")
         {
             next_position += Head.transform.forward * MoveSpeed;
             Vector3 binding_y = next_position;
             binding_y.y = _cameraHeight;
-            transform.position = binding_y;
-        }
-        if (text == "0")
-        {
-            next_position -= Head.transform.forward * MoveSpeed;
-            Vector3 binding_y = next_position;
-            binding_y.y = next_position.y;
             transform.position = binding_y;
         }
     }
