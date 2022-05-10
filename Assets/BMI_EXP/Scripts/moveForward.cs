@@ -35,7 +35,7 @@ public class moveForward : MonoBehaviour
         Vector3 next_position = transform.position;
 
 
-        if (text == "1")
+        if (Input.GetKey("w"))
         {
             next_position += Head.transform.forward * MoveSpeed;
             Vector3 binding_y = next_position;

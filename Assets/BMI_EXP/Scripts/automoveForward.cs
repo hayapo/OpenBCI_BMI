@@ -28,7 +28,7 @@ public class automoveForward : MonoBehaviour
         IPEndPoint remoteEP = null;
         byte[] data = udp.Receive(ref remoteEP);
         string flag = Encoding.UTF8.GetString(data);
-        if (flag == "1")
+        if (Input.GetKeyDown("w"))
         {
             while (pos.z < 12.5f)
             {
