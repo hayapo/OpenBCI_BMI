@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Meta
   m_EditorClassIdentifier: 
   ExporterVersion: VRoid Studio-1.7.0
-  Title: 
-  Version: 
-  Author: 
+  Title: male_VRM
+  Version: 0.10
+  Author: Hayato Saito
   ContactInformation: 
   Reference: 
   Thumbnail: {fileID: 2800000, guid: 5b412228e640643429a7f79776502a59, type: 3}
